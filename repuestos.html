@@ -14,68 +14,8 @@
   </head>
 
   <body>
-    <nav
-      class="
-        navbar navbar-expand-lg navbar-light
-        bg-light
-        site-header
-        sticky-top
-      "
-    >
-      <a class="navbar-brand" href="index.html"
-        ><img src="img/logo.jpeg" width="90px" alt="Taller RPM" /> Taller RPM
-      </a>
-      <button
-        class="navbar-toggler navcolor"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div
-        class="text-center collapse navbar-collapse"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"
-              >Inicio <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="taller.html"
-              >Taller <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="repuestos.html"
-              >Repuestos <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactenos.html"
-              >Contáctenos <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=+50230905070&text=Taller%20RPM%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
-            >
-              <img src="img/whatsapp.png" width="25px" alt="WhatsApp" />+502
-              3090-5070</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+    <div class="navbarTaller"></div>
+    <br />
     <div class="container text-center">
       <h1 class="display-4">Repuestos</h1>
       <p class="text-center texto">
@@ -158,22 +98,7 @@
     </div>
     <br />
     <div class="footerTaller"></div>
-
-    <!-- WHATSAPP Y FACEBOOK MESSENGER -->
-    <div class="floatwa">
-      <a
-        href="https://api.whatsapp.com/send?phone=+50230905070&text=Taller%20RPM%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="img/whatsapp.png"
-          class="icoRed rounded"
-          alt="WhatsApp"
-          id="wa"
-        />
-      </a>
-    </div>
+    <div class="waTaller"></div>
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
@@ -205,27 +130,34 @@
       logged_in_greeting="Bienvenido a Taller RPM, ¿En qué te podemos ayudar?"
       logged_out_greeting="Bienvenido a Taller RPM, ¿En qué te podemos ayudar?"
     ></div>
-    <!-- FIN WHATSAPP Y FACEBOOK MESSENGER -->
 
+    <!-- scripts -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <script
-      src="https://unpkg.com/react@17/umd/react.production.min.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
+    <script src="js/react.production.min.js"></script>
+    <script src="js/react-dom.production.min.js"></script>
+    <script src="js/babel.min.js"></script>
+    <!-- components -->
     <script type="text/babel" src="components/FooterComponent.js"></script>
+    <script type="text/babel" src="components/WhatsAppComponent.js"></script>
+    <script type="text/babel" src="components/NavbarComponent.js"></script>
 
     <script type="text/babel">
       ReactDOM.render(
         <FooterComponent />,
         document.querySelector(".footerTaller")
+      );
+    </script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <WhatsAppComponent />,
+        document.querySelector(".waTaller")
+      );
+    </script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <NavbarComponent />,
+        document.querySelector(".navbarTaller")
       );
     </script>
   </body>
