@@ -30,15 +30,6 @@ class FooterComponent extends React.Component {
                   />
                   +502 3090-5070
                 </a>
-                <a target="_blank" class="list-group-item letraBlack">
-                  <img
-                    src="img/gmail.png"
-                    class="align-middle arrowColor"
-                    alt="Gmail"
-                    width="35px"
-                  />
-                  rpmtallergt@gmail.com
-                </a>
                 <a class="list-group-item letraBlack">
                   <img
                     src="img/location.svg"
@@ -69,7 +60,7 @@ class FooterComponent extends React.Component {
                   @tallerrpmgt
                 </a>
                 <a
-                  href="https://www.facebook.com/rpmtallergt"
+                  href="https://www.facebook.com/TallerRPMGT"
                   target="_blank"
                   class="list-group-item letraBlack"
                 >
@@ -79,27 +70,14 @@ class FooterComponent extends React.Component {
                     alt="Gmail"
                     width="35px"
                   />
-                  Taller RPM
-                </a>
-                <a
-                  href="https://instagram.com/tallerrpmgt?utm_medium=copy_link"
-                  target="_blank"
-                  class="list-group-item letraBlack"
-                >
-                  <img
-                    src="img/instagram.png"
-                    class="align-middle arrowColor"
-                    alt="Gmail"
-                    width="35px"
-                  />
-                  @tallerrpmgt
+                  Taller RPM GT
                 </a>
               </ul>
             </div>
           </div>
           <br />
           <p class="mb-0 text-center">
-            © 2021 Todos los Derechos Resevados | Taller RPM
+            © 2021 Todos los Derechos Resevados | Taller RPM GT
           </p>
         </div>
       </footer>

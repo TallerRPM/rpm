@@ -23,7 +23,7 @@
       "
     >
       <a class="navbar-brand" href="index.html"
-        ><img src="img/logo.jpeg" width="90px" alt="Taller RPM" /> Taller RPM
+        ><img src="img/logo.jpeg" width="90px" alt="Taller RPM" /> Taller RPM GT
       </a>
       <button
         class="navbar-toggler navcolor"
@@ -33,6 +33,7 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style="background-color: #bdbdbd"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -57,11 +58,6 @@
               >Repuestos <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactenos.html"
-              >Contáctenos <span class="sr-only">(current)</span></a
-            >
-          </li>
           <li class="nav-item active">
             <a
               class="nav-link"
@@ -79,7 +75,7 @@
     <div class="container text-center">
       <h1 class="display-4">Repuestos</h1>
       <p class="text-center texto">
-        En RPM Taller también nos ponemos a disposición con repuestos y
+        En Taller RPM también nos ponemos a disposición con repuestos y
         accesorios para tu motocicleta.
       </p>
     </div>
@@ -145,67 +141,18 @@
         </div>
       </div>
     </div>
-    <br />
+    <br /><br />
     <div class="container-fluid text-center border border-danger addBorder">
       <h3>¿Necesita alguno de nuestros repuestos?</h3>
     </div>
     <br />
     <div class="container text-center">
-      <p>
-        Contáctenos por nuestras redes sociales, llámenos o inicie una
-        conversación por WhatsApp! Será un gusto atenderle.
-      </p>
+      <h5>Llámenos o escribamos por WhatsApp. Será un gusto atenderle.</h5>
     </div>
     <br />
+
     <div class="footerTaller"></div>
-
-    <!-- WHATSAPP Y FACEBOOK MESSENGER -->
-    <div class="floatwa">
-      <a
-        href="https://api.whatsapp.com/send?phone=+50230905070&text=Taller%20RPM%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="img/whatsapp.png"
-          class="icoRed rounded"
-          alt="WhatsApp"
-          id="wa"
-        />
-      </a>
-    </div>
-
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v8.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-
-    <!-- Your Chat Plugin code -->
-    <div
-      class="fb-customerchat"
-      attribution="setup_tool"
-      page_id="105096484498655"
-      theme_color="#FF0000"
-      logged_in_greeting="Bienvenido a Taller RPM, ¿En qué te podemos ayudar?"
-      logged_out_greeting="Bienvenido a Taller RPM, ¿En qué te podemos ayudar?"
-    ></div>
-    <!-- FIN WHATSAPP Y FACEBOOK MESSENGER -->
+    <div class="waTaller"></div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -221,11 +168,18 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <script type="text/babel" src="components/FooterComponent.js"></script>
+    <script type="text/babel" src="components/WhatsAppComponent.js"></script>
 
     <script type="text/babel">
       ReactDOM.render(
         <FooterComponent />,
         document.querySelector(".footerTaller")
+      );
+    </script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <WhatsAppComponent />,
+        document.querySelector(".waTaller")
       );
     </script>
   </body>

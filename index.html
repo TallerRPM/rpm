@@ -23,7 +23,8 @@
       "
     >
       <a class="navbar-brand" href="index.html"
-        ><img src="img/logo.jpeg" width="90px" alt="Taller RPM" /> Taller RPM
+        ><img src="img/logo.jpeg" width="90px" alt="Taller RPM GT" /> Taller RPM
+        GT
       </a>
       <button
         class="navbar-toggler navcolor"
@@ -33,6 +34,7 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style="background-color: #bdbdbd"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -57,11 +59,6 @@
               >Repuestos <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactenos.html"
-              >Contáctenos <span class="sr-only">(current)</span></a
-            >
-          </li>
           <li class="nav-item active">
             <a
               class="nav-link"
@@ -79,7 +76,7 @@
     <div class="container-fluid text-center presentacion">
       <div class="container">
         <br />
-        <h1 class="display-4">Taller RPM</h1>
+        <h1 class="display-4">Taller RPM GT</h1>
         <br />
         <p class="text-justify texto">
           Somos un taller especializado en el
@@ -95,20 +92,11 @@
       <br />
     </div>
 
-    <!-- <div class="slider col-md-5">
-      <ul>
-        <li><img src="img/logo.jpeg" alt="" /></li>
-        <li><img src="img/taller.jpg" alt="" /></li>
-        <li><img src="img/carwashrpm.jpeg" alt="" /></li>
-        <li><img src="img/herramientas.jpg" alt="" /></li>
-      </ul>
-    </div> -->
-
     <!-- CONTENIDO DE LA PAGINA INICIO -->
     <div class="container text-center">
       <div class="row">
         <!-- Columna Taller -->
-        <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <main>
             <article>
               <img
@@ -124,8 +112,8 @@
               <hr />
               <p class="container-fluid text-justify">
                 Nuestro compromiso es brindar un servicio profesional
-                garantizando la calidad. Y lograr obtener el reconocimiento y
-                confianza de nuestros clientes en Guatemala.
+                garantizando la calidad, y obtener el reconocimiento y confianza
+                de nuestros clientes en Guatemala.
               </p>
               <a href="taller.html" class="btn btn-danger" role="button">
                 Ir a Taller
@@ -136,7 +124,7 @@
         </div>
 
         <!-- Columna Repuestos -->
-        <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <main>
             <article>
               <img
@@ -149,9 +137,9 @@
               <h2 class="text-center" id="subtitulos">Repuestos</h2>
               <hr />
               <p class="container-fluid text-justify">
-                Ofrecemos una gran variedad de repuestos y accesorios para
-                motocicletas de alta calidad, de esta forma garantizamos la
-                satisfacción total de nuestros clientes.
+                Ofrecemos variedad de repuestos y accesorios de alta calidad
+                para motocicletas, de esta forma garantizamos la satisfacción
+                total de nuestros clientes.
               </p>
               <a href="repuestos.html" class="btn btn-danger" role="button">
                 Ver Repuestos
@@ -159,44 +147,47 @@
             </article>
           </main>
         </div>
-        <br /><br />
+      </div>
+      <br /><br /><br />
+      <div class="container">
+        <div class="container">
+          <h2 class="font-weight-bold">
+            Aceptamos Visacuotas para tu Comodidad
+          </h2>
+          <img src="img/VisaEnCuotas.png" alt="Visacuotas" class="img-fluid" />
+        </div>
       </div>
     </div>
-    <br />
+    <br /><br />
+    <!-- ROW PARA UBICACIÓN-->
+    <div class="container text-center">
+      <div class="row" style="margin-top: 20px">
+        <div class="col-sm-12 col-md-12">
+          <img src="img/ubicacion.png" alt="Ubicación" width="80px" />
+          <h3>Ubicación</h3>
+          <h5>10 Calle 2-52 Zona 1, Ciudad de Guatemala</h5>
+          <br />
+        </div>
+        <div class="container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15441.160695739169!2d-90.5178712!3d14.6394627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9f38adb7352f724!2sTaller%20RPM!5e0!3m2!1ses!2sgt!4v1639457235269!5m2!1ses!2sgt"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="map-responsive"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
 
     <div class="footerTaller"></div>
     <div class="waTaller"></div>
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v8.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-
-    <!-- Your Chat Plugin code -->
-    <div
-      class="fb-customerchat"
-      attribution="setup_tool"
-      page_id="105096484498655"
-      theme_color="#FF0000"
-      logged_in_greeting="Bienvenido a Taller RPM, ¿En qué te podemos ayudar?"
-      logged_out_greeting="Bienvenido a Taller RPM, ¿En qué te podemos ayudar?"
-    ></div>
 
     <!-- scripts -->
     <script src="js/jquery-3.6.0.min.js"></script>
