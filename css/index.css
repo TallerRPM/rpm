@@ -69,17 +69,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.footerColor {
-  background-color: #30475e;
-}
-.arrowColor {
-  background-color: #ffffff;
-}
-.letraWhite {
-  color: #fff;
-}
-
-.map-responsive {
-  width: 90%;
-}

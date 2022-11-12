@@ -1,7 +1,3 @@
-# RPM
+# tallerrpm
 
-Sitio web de Taller RPM GT. Taller de motocicletas y venta de repuestos.
-
-## Sitio Web
-
-- [https://tallerrpmgt.com/](https://tallerrpmgt.com/)
+Sitio Web para el Taller RPM. Taller de motocicletas, car wash y venta de repuestos.
